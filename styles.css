@@ -1,24 +1,25 @@
 table {
   margin: 10%;
   text-align: center;
-  border-collapse: collapse;
+  /*border-collapse: collapse;*/
 }
 
 td {
   width: 75px;
   height: 75px;
-  border: 1px solid #0d1410;
 }
 
 td.on {
   background-color: #6fad8a;
+  border: 4px solid #6fad8a;
 }
 
 td.off {
   background-color: #365443;
+  border: 4px solid #365443;
 }
 
 td:hover {
-  background-color: #eee;
+  border: 4px solid #0d1410;
   cursor: pointer;
 }

@@ -4,15 +4,22 @@ import ReactDOM from 'react-dom';
 class Square extends Component {
   constructor(props) {
     super(props);
-    this.state = { active: props.starting };
+    const startAt = props.starting;
+    this.state = { active: startAt };
+    this.onSqClick = this.onSqClick.bind(this);
+  }
+
+  onSqClick(e) {
+    this.setState({ active: !this.state.active });
   }
 
   render() {
-    if (this.state.active) {
-      return <td className="on"></td>;
-    } else {
-      return <td className="off"></td>;
-    }
+    return (
+      <td
+        className={ this.state.active ? 'on' : 'off' }
+        onClick={ this.onSqClick }>
+      </td>
+    );
   }
 }
 
