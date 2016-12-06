@@ -9,9 +9,9 @@ class Square extends Component {
 
   render() {
     if (this.state.active) {
-      return <td className="on">X</td>;
+      return <td className="on"></td>;
     } else {
-      return <td className="off">O</td>;
+      return <td className="off"></td>;
     }
   }
 }

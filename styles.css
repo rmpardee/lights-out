@@ -7,7 +7,15 @@ table {
 td {
   width: 75px;
   height: 75px;
-  border: 1px solid #ddd;
+  border: 1px solid #0d1410;
+}
+
+td.on {
+  background-color: #6fad8a;
+}
+
+td.off {
+  background-color: #365443;
 }
 
 td:hover {
